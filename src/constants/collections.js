@@ -1,0 +1,14 @@
+export const USERS_COLLECTION = "users";
+export const TRIPS_COLLECTION = "trips";
+export const POSTS_COLLECTION = "posts";
+export const LIKES_COLLECTION = "likes";
+export const COMMENTS_COLLECTION = "comments";
+export const COMPARE_TRIPS_COLLECTION = "compareTrips";
+export const CHATS_COLLECTION = "chats";
+export const MESSAGES_COLLECTION = "messages";
+export const STATUSES_COLLECTION = "statuses";
+export const NOTES_COLLECTION = "notes";
+export const REQUESTS_COLLECTION = "requests";
+export const EXPENSES_COLLECTION = "expenses";
+export const REFERENCES_COLLECTION = "references";
+export const PHOTOS_COLLECTION = "photos";

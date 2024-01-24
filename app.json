@@ -9,6 +9,25 @@
     },
     "icon": "./assets/icon.png",
     "name": "hodo-5",
-    "slug": "hodo-5"
+    "slug": "hodo-5",
+    "android": {
+      "package": "com.hodo.hodo"
+    },
+    "ios": {
+      "bundleIdentifier": "com.hodo.hodo"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "1b48e4ac-8aa8-44cb-b512-f80c7e35638a"
+      }
+    },
+    "plugins": [
+      [
+        "expo-document-picker",
+        {
+          "iCloudContainerEnvironment": "Production"
+        }
+      ]
+    ]
   }
 }

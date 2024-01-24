@@ -4,6 +4,7 @@ import { createMedia } from "@tamagui/react-native-media-driver";
 import { shorthands } from "@tamagui/shorthands";
 import { themes, tokens } from "@tamagui/themes";
 import { createTamagui } from "tamagui";
+import { DARK_THEME_ACCENT_COLOR, DARK_THEME_PRIMARY_COLOR, DARK_THEME_PRIMARY_FONT_COLOR, DARK_THEME_SECONARY_FONT_COLOR, DARK_THEME_SECONDARY_COLOR, LIGHT_THEME_ACCENT_COLOR, LIGHT_THEME_PRIMARY_COLOR, LIGHT_THEME_PRIMARY_FONT_COLOR, LIGHT_THEME_SECONARY_FONT_COLOR, LIGHT_THEME_SECONDARY_COLOR } from "./src/constants/colors";
 
 const animations = createAnimations({
   bouncy: {
@@ -17,12 +18,23 @@ const animations = createAnimations({
     damping: 20,
     stiffness: 60
   },
-  quick: {
+  fast: {
     type: "spring",
     damping: 20,
     mass: 1.2,
     stiffness: 250
-  }
+  },
+  medium: {
+    type: 'spring',
+    damping: 10,
+    mass: 0.9,
+    stiffness: 100,
+  },
+  slow: {
+    type: 'spring',
+    damping: 20,
+    stiffness: 60,
+  },
 });
 
 const headingFont = createInterFont();
@@ -38,7 +50,22 @@ const config = createTamagui({
     heading: headingFont,
     body: bodyFont
   },
-  themes,
+  themes: {
+    dark: {
+      primaryColor: DARK_THEME_PRIMARY_COLOR,
+      secondaryColor: DARK_THEME_SECONDARY_COLOR,
+      accentColor: DARK_THEME_ACCENT_COLOR,
+      primaryFontColor: DARK_THEME_PRIMARY_FONT_COLOR,
+      secondaryFontColor: DARK_THEME_SECONARY_FONT_COLOR,
+    },
+    light: {
+      primaryColor: LIGHT_THEME_PRIMARY_COLOR,
+      secondaryColor: LIGHT_THEME_SECONDARY_COLOR,
+      accentColor: LIGHT_THEME_ACCENT_COLOR,
+      primaryFontColor: LIGHT_THEME_PRIMARY_FONT_COLOR,
+      secondaryFontColor: LIGHT_THEME_SECONARY_FONT_COLOR,
+    },
+  },
   tokens,
   media: createMedia({
     xs: { maxWidth: 660 },

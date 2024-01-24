@@ -1,0 +1,26 @@
+export const CHAT_GPT_URL = "https://api.openai.com/v1/chat/completions";
+
+const FIREBASE_FUNCTIONS_URL = "https://asia-south1-hodo-b93c9.cloudfunctions.net";
+export const NEW_TRIP_URL = FIREBASE_FUNCTIONS_URL + "/newTrip";
+export const END_TRIP_URL = "https://asia-south1-hodo-b93c9.cloudfunctions.net/endTrip";
+export const REMOVE_USER_FROM_TRIP_URL = "https://asia-south1-hodo-b93c9.cloudfunctions.net/removeTripFromUser";
+export const ADD_USER_TO_TRIP_URL = "https://asia-south1-hodo-b93c9.cloudfunctions.net/addTripToUser";
+export const UPDATE_ITINIRARY_URL = "https://asia-south1-hodo-b93c9.cloudfunctions.net/updateItinirary";
+export const JOIN_TRIP_URL = "https://asia-south1-hodo-b93c9.cloudfunctions.net/joinTrip";
+export const UPDATE_LIKES_OF_POST_URL = "https://asia-south1-hodo-b93c9.cloudfunctions.net/updateLikesOfPost";
+export const CREATE_POST_COMMENT_URL = "https://asia-south1-hodo-b93c9.cloudfunctions.net/createPostComment";
+export const DELETE_POST_COMMENT_URL = "https://asia-south1-hodo-b93c9.cloudfunctions.net/deletePostComment";
+export const DELETE_POST_URL = "https://asia-south1-hodo-b93c9.cloudfunctions.net/deletePost";
+export const POSTS_OF_USER_FOLLOWINGS_URL = "https://asia-south1-hodo-b93c9.cloudfunctions.net/getPostsOfUserFollowings";
+export const UPDATE_TRIP_URL = "https://asia-south1-hodo-b93c9.cloudfunctions.net/updateTrip";
+export const ADD_STOP_TO_TRIP_URL = "https://asia-south1-hodo-b93c9.cloudfunctions.net/addStopToTrip";
+export const COMPARE_TRIPS_URL = "https://asia-south1-hodo-b93c9.cloudfunctions.net/compareTrips";
+export const UPDATE_COMPARE_TRIPS_URL = "https://asia-south1-hodo-b93c9.cloudfunctions.net/updateCompareTrips";
+export const REMOVE_USER_FROM_COMPARE_URL = "https://asia-south1-hodo-b93c9.cloudfunctions.net/removeCompareFromUser";
+export const ADD_USER_TO_COMPARE_URL = "https://asia-south1-hodo-b93c9.cloudfunctions.net/addCompareToUser";
+export const GET_SEARCH_RESULTS_URL = "https://asia-south1-hodo-b93c9.cloudfunctions.net/getSearchResults";
+export const CHECK_IF_PHONE_NUMBER_EXISTS_URL = "https://asia-south1-hodo-b93c9.cloudfunctions.net/checkIfPhoneNumberExists";
+export const CHECK_IF_EMAIL_EXISTS_URL = "https://asia-south1-hodo-b93c9.cloudfunctions.net/checkIfEmailExists";
+export const SEND_CS_REQUEST_TO_USER = "https://asia-south1-hodo-b93c9.cloudfunctions.net/sendCSRequestToUser";
+export const DELETE_TRIP_URL = "https://asia-south1-hodo-b93c9.cloudfunctions.net/deleteTrip";
+export const UPDATE_TRIP_BY_KEY_URL = "https://asia-south1-hodo-b93c9.cloudfunctions.net/updateTripByKey";
